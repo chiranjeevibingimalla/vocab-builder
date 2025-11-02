@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vocab Builder: Word & Idiom of the Day</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'light-bg': '#f8fafc',
+              'light-card': '#ffffff',
+              'light-text': '#0f172a',
+              'light-text-secondary': '#64748b',
+              'light-accent': '#3b82f6',
+              'light-accent-hover': '#2563eb',
+              'light-border': '#e2e8f0',
+              'dark-bg': '#0b1120',
+              'dark-card': '#1e293b',
+              'dark-text': '#f1f5f9',
+              'dark-text-secondary': '#94a3b8',
+              'dark-accent': '#60a5fa',
+              'dark-accent-hover': '#3b82f6',
+              'dark-border': '#334155',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-in-out',
+              'slide-in-up': 'slideInUp 0.5s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: 0 },
+                '100%': { opacity: 1 },
+              },
+              slideInUp: {
+                '0%': { transform: 'translateY(20px)', opacity: 0 },
+                '100%': { transform: 'translateY(0)', opacity: 1 },
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-B72D_zLM.js"></script>
+</head>
+  <body class="bg-light-bg dark:bg-dark-bg">
+    <div id="root"></div>
+  </body>
+</html>
